@@ -1,10 +1,11 @@
-const arraySpesa =[banane, cipolle,pasta,pesto,gallette,macinato];
+const arraySpesa =['banane', 'cipolle','pasta','pesto','gallette','macinato'];
 const ulElement = document.querySelector('ul');
 
 let contatore =0;
-while (contatore == arraySpesa){
+while (contatore < arraySpesa.length){
     const li = document.createElement('li');
-    li.append =(arraySpesa[contatore]);
+    li.textContent =arraySpesa[contatore];
     contatore = contatore + 1;
 
+    ulElement.appendChild(li);
 }
